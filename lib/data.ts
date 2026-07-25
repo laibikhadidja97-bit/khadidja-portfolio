@@ -133,6 +133,25 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: "Artisan DZ",
+    tagline: "Artisans & Services Marketplace (Algeria)",
+    badge: "Marketplace",
+    description:
+      "A marketplace connecting Algerian artisans and skilled workers with customers. A TypeScript monorepo — a Node.js/Express/Prisma API (~70 endpoints) and a React/Vite frontend — with notifications, real-time chat, reviews, and geo-based search, containerized with Docker (PostgreSQL + Redis).",
+    tech: [
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "React",
+      "Vite",
+      "Redis",
+      "Docker",
+    ],
+    featured: true,
+  },
+  {
     title: "Doctors Directory",
     tagline: "Healthcare Platform",
     badge: "Healthcare",
