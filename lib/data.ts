@@ -153,6 +153,25 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: "Accounting Desktop",
+    tagline: "Offline Desktop Accounting App",
+    badge: "Desktop App",
+    description:
+      "A fully offline desktop accounting application (Electron) backed by a local SQLite database. Covers invoicing, cashier/POS, products & inventory, customers & suppliers, warranties, maintenance, and reports — with a modern Radix + Tailwind UI, validated forms, and QR codes. Packages to a native Windows installer.",
+    tech: [
+      "Electron",
+      "React",
+      "TypeScript",
+      "Vite",
+      "SQLite",
+      "Tailwind",
+      "Radix UI",
+      "Zod",
+    ],
+    caseStudy: "/projects/accounting-desktop",
+    featured: true,
+  },
+  {
     title: "Doctors Directory",
     tagline: "Healthcare Platform",
     badge: "Healthcare",
@@ -335,3 +354,47 @@ export const artisanScreenshots: Screenshot[] = [
     caption: "Brand preview",
   },
 ];
+
+/* ------------------------------------------------------------------ */
+/*  Accounting Desktop — showcase page (/projects/accounting-desktop) */
+/* ------------------------------------------------------------------ */
+
+export const accountingShowcase: Showcase = {
+  slug: "accounting-desktop",
+  title: "Accounting Desktop",
+  tagline: "Offline Desktop Accounting App · Electron + SQLite",
+  eyebrow: "Project Showcase",
+  cover: "/screenshots/accounting-desktop/icon.png",
+  intro:
+    "A fully offline desktop accounting application built with Electron, React and TypeScript, backed by a local SQLite database. It runs entirely on the user's machine — no internet required — and packages to a native Windows installer.",
+  tech: [
+    "Electron",
+    "React",
+    "TypeScript",
+    "Vite",
+    "better-sqlite3",
+    "Tailwind CSS",
+    "Radix UI",
+    "React Hook Form",
+    "Zod",
+    "TanStack Table",
+  ],
+  features: [
+    "Fully offline — local SQLite database, no server needed",
+    "Invoicing & cashier (POS) module",
+    "Products & inventory management",
+    "Customers & suppliers management",
+    "Warranty tracking",
+    "Maintenance management",
+    "Reports & analytics",
+    "QR codes, validated forms (Zod) & data tables",
+    "Arabic / RTL support",
+    "Native Windows installer (electron-builder)",
+  ],
+  privateNote: {
+    title: "Private repository",
+    body: "This is my own project; the repository is currently private. Source code and a demo build are available on request.",
+  },
+};
+
+export const accountingScreenshots: Screenshot[] = [];
