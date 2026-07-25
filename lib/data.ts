@@ -149,6 +149,7 @@ export const projects: Project[] = [
       "Redis",
       "Docker",
     ],
+    caseStudy: "/projects/artisan-dz",
     featured: true,
   },
   {
@@ -266,6 +267,18 @@ export const erpShowcase = {
 
 export type Screenshot = { src: string; alt: string; caption?: string };
 
+export type Showcase = {
+  slug: string;
+  title: string;
+  tagline: string;
+  cover: string;
+  intro: string;
+  tech: string[];
+  features: string[];
+  eyebrow?: string;
+  privateNote?: { title: string; body: string };
+};
+
 // To add real screenshots: drop image files into
 // public/screenshots/erp-pos/ and add an entry here.
 export const erpScreenshots: Screenshot[] = [
@@ -274,4 +287,51 @@ export const erpScreenshots: Screenshot[] = [
   //   alt: "ERP dashboard",
   //   caption: "Main dashboard — sales overview",
   // },
+];
+
+/* ------------------------------------------------------------------ */
+/*  Artisan DZ — product showcase page (/projects/artisan-dz)         */
+/* ------------------------------------------------------------------ */
+
+export const artisanShowcase: Showcase = {
+  slug: "artisan-dz",
+  title: "Artisan DZ",
+  tagline: "Artisans & Services Marketplace · Algeria",
+  eyebrow: "Project Showcase",
+  cover: "/screenshots/artisan-dz/icon.svg",
+  intro:
+    "Algeria's trusted marketplace connecting artisans and skilled workers with customers. A TypeScript monorepo with a Node.js/Express/Prisma API and a React/Vite web app — designed end-to-end, from PRD and user stories to a Dockerized production deployment.",
+  tech: [
+    "Node.js",
+    "Express",
+    "TypeScript",
+    "Prisma",
+    "PostgreSQL",
+    "Redis",
+    "React",
+    "Vite",
+    "Docker",
+  ],
+  features: [
+    "Two-sided marketplace: customers hire artisans & skilled workers",
+    "Real-time chat between customers and artisans",
+    "Ratings & reviews system",
+    "Geo-based search to find nearby artisans",
+    "Notifications system (in-app & real-time)",
+    "Secure authentication with role-based accounts",
+    "~70-endpoint REST API (Express + Prisma)",
+    "Dockerized deployment (PostgreSQL + Redis)",
+  ],
+  privateNote: {
+    title: "Private repository",
+    body: "This is my own project; the repository is currently private. Source code is available on request.",
+  },
+};
+
+export const artisanScreenshots: Screenshot[] = [
+  {
+    src: "/screenshots/artisan-dz/og-image.svg",
+    alt: "Artisan DZ brand preview",
+    caption: "Brand preview",
+  },
 ];
