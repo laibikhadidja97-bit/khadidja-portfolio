@@ -8,8 +8,8 @@ import {
 export const profile = {
   name: "Khadidja Laibi",
   role: "Full-Stack Web & Mobile Developer",
-  // TODO: replace with your own domain once deployed
-  siteUrl: "https://khadidjalaibi.dev",
+  // Replace with your own custom domain if you add one later.
+  siteUrl: "https://laibikhadidja97-bit.github.io/khadidja-portfolio",
   location: "Algiers, Algeria",
   email: "laibikhadidja97@gmail.com",
   yearsOfExperience: 7,

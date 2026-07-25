@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/ui/Reveal";
 import { erpShowcase, erpScreenshots } from "@/lib/data";
+import { asset } from "@/lib/base";
 
 export const metadata: Metadata = {
   title: `${erpShowcase.title} — Showcase`,
@@ -33,7 +34,7 @@ export default function ErpShowcasePage() {
                 <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] p-3">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={erpShowcase.cover}
+                    src={asset(erpShowcase.cover)}
                     alt={`${erpShowcase.title} logo`}
                     className="h-full w-full object-contain"
                   />
@@ -124,10 +125,10 @@ export default function ErpShowcasePage() {
                 {erpScreenshots.map((shot, i) => (
                   <Reveal key={shot.src} delay={(i % 2) * 0.06}>
                     <figure className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                      <a href={shot.src} target="_blank" rel="noopener noreferrer">
+                      <a href={asset(shot.src)} target="_blank" rel="noopener noreferrer">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
-                          src={shot.src}
+                          src={asset(shot.src)}
                           alt={shot.alt}
                           loading="lazy"
                           className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"

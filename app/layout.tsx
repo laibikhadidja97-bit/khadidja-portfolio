@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 import { profile } from "@/lib/data";
+import { asset } from "@/lib/base";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
     description,
   },
   icons: {
-    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    icon: [{ url: asset("/favicon.svg"), type: "image/svg+xml" }],
   },
   robots: { index: true, follow: true },
 };

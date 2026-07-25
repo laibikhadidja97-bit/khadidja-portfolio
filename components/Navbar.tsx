@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { navLinks, profile } from "@/lib/data";
+import { navLinks } from "@/lib/data";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,30 +27,30 @@ export default function Navbar() {
       }`}
     >
       <nav className="container-x flex h-16 items-center justify-between">
-        <a
+        <Link
           href="/"
           className="font-display text-lg font-bold tracking-tight text-white"
         >
           Khadidja <span className="gradient-text">Laibi</span>
-        </a>
+        </Link>
 
         <ul className="hidden items-center gap-1 md:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
+              <Link
                 href={link.href}
                 className="rounded-lg px-3.5 py-2 text-sm font-medium text-slate-300 transition-colors hover:text-white"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
 
         <div className="hidden md:block">
-          <a href="/#contact" className="btn-primary !px-4 !py-2 text-sm">
+          <Link href="/#contact" className="btn-primary !px-4 !py-2 text-sm">
             Let&apos;s talk
-          </a>
+          </Link>
         </div>
 
         <button
@@ -75,23 +76,23 @@ export default function Navbar() {
             <ul className="container-x flex flex-col gap-1 py-4">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     onClick={() => setOpen(false)}
                     className="block rounded-lg px-3 py-2.5 text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-white"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li className="pt-2">
-                <a
+                <Link
                   href="/#contact"
                   onClick={() => setOpen(false)}
                   className="btn-primary w-full"
                 >
                   Let&apos;s talk
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, MapPin } from "lucide-react";
 import { profile, socials, stats } from "@/lib/data";
+import { asset } from "@/lib/base";
 import { fadeUp, stagger } from "@/lib/motion";
 
 export default function Hero() {
@@ -73,7 +74,7 @@ export default function Hero() {
               Contact Me
             </a>
             <a
-              href={profile.resumeUrl}
+              href={asset(profile.resumeUrl)}
               className="btn-ghost"
               download
             >
