@@ -178,6 +178,7 @@ export const projects: Project[] = [
     description:
       "A web app for managing car imports from China — it automatically computes purchase and sale prices in USD and Algerian Dinar, and tracks customer payments, debts, and profits. Fully client-side and offline, with a statistics dashboard and a bilingual Arabic/French, RTL interface.",
     tech: ["JavaScript", "HTML5", "CSS3", "LocalStorage", "RTL", "Responsive"],
+    live: "https://laibikhadidja97-bit.github.io/china-cars-demo/",
     caseStudy: "/projects/china-cars",
   },
   {
@@ -304,6 +305,7 @@ export type Showcase = {
   tech: string[];
   features: string[];
   eyebrow?: string;
+  live?: string;
   privateNote?: { title: string; body: string };
 };
 
@@ -417,6 +419,7 @@ export const chinaCarsShowcase: Showcase = {
   title: "China Cars",
   tagline: "Car-Import Management App · USD / DZD",
   eyebrow: "Project Showcase",
+  live: "https://laibikhadidja97-bit.github.io/china-cars-demo/",
   cover: "/screenshots/china-cars/cover.svg",
   intro:
     "A web app for managing car imports from China. It automatically computes purchase and sale prices in USD and Algerian Dinar (DZD), and tracks customer payments, outstanding debts, and profits — all from a clean statistics dashboard. Fully client-side and offline, with a bilingual Arabic/French interface.",

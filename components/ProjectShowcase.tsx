@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, Check, ImageOff, Sparkles } from "lucide-react";
+import { ArrowLeft, Check, ExternalLink, ImageOff, Sparkles } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/ui/Reveal";
@@ -49,6 +49,17 @@ export default function ProjectShowcase({ showcase, screenshots }: Props) {
                     {showcase.title}
                   </h1>
                   <p className="mt-1 text-slate-400">{showcase.tagline}</p>
+                  {showcase.live && (
+                    <a
+                      href={showcase.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary mt-4 !py-2.5 text-sm"
+                    >
+                      <ExternalLink size={16} />
+                      Open live demo
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
