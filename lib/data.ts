@@ -172,6 +172,15 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: "China Cars",
+    tagline: "Car-Import Management (USD / DZD)",
+    badge: "Web App",
+    description:
+      "A web app for managing car imports from China — it automatically computes purchase and sale prices in USD and Algerian Dinar, and tracks payments, outstanding balances, and profits. Fully client-side and offline, with a statistics dashboard and a bilingual Arabic/French, RTL interface.",
+    tech: ["JavaScript", "HTML5", "CSS3", "LocalStorage", "RTL", "Responsive"],
+    caseStudy: "/projects/china-cars",
+  },
+  {
     title: "Doctors Directory",
     tagline: "Healthcare Platform",
     badge: "Healthcare",
@@ -399,3 +408,42 @@ export const accountingShowcase: Showcase = {
 };
 
 export const accountingScreenshots: Screenshot[] = [];
+
+/* ------------------------------------------------------------------ */
+/*  China Cars — showcase page (/projects/china-cars)                 */
+/*  Showcase only — no live demo, no customer data.                   */
+/* ------------------------------------------------------------------ */
+
+export const chinaCarsShowcase: Showcase = {
+  slug: "china-cars",
+  title: "China Cars",
+  tagline: "Car-Import Management App · USD / DZD",
+  eyebrow: "Project Showcase",
+  cover: "/screenshots/china-cars/cover.svg",
+  intro:
+    "A web app for managing car imports from China. It automatically computes purchase and sale prices in USD and Algerian Dinar (DZD), and tracks payments, outstanding balances, and profits — all from a clean statistics dashboard. Fully client-side and offline, with a bilingual Arabic/French interface.",
+  tech: [
+    "JavaScript (Vanilla)",
+    "HTML5",
+    "CSS3",
+    "LocalStorage",
+    "Responsive",
+    "Arabic / French (RTL)",
+  ],
+  features: [
+    "Statistics dashboard: sales, net profit, receivables & car count",
+    "Automatic pricing: total USD, purchase/sale, remaining & profit",
+    "Search & filter (all / paid / outstanding)",
+    "Bilingual UI (Arabic / French) with full RTL support",
+    "Responsive — table turns into cards on mobile",
+    "Offline: data saved locally in the browser (LocalStorage)",
+    "Backup: JSON export & import",
+    "Zero install — just open in a browser",
+  ],
+  privateNote: {
+    title: "Private repository",
+    body: "This is my own project; the repository is private and it handles real business data, so no public live demo is provided. A walkthrough is available on request.",
+  },
+};
+
+export const chinaCarsScreenshots: Screenshot[] = [];
